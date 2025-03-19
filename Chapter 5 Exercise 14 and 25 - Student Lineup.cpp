@@ -5,24 +5,41 @@
 //For example, in one class Amy will be at the front of the line, and Yolanda will be at the end.
 // Write a program that prompts the user to enter the number of students in the class, then loops to read that many names.
 // Once all the names have been read, it reports which student would be at the front of the line and
-// which one would be at the end of the line.You may assume that no two students have the same name.
-// Input Validation : Do not accept a number less than 1 or greater than 25 for the number of students.
+// which one would be at the end of the line.
+//Using Files—Student Line Up -Create a second branch for this project and modify your program to do the following:
+//Create a new branch in your Exercise 14 project that modifies the Student Line Up program described in Programming Challenge 14 so
+// it reads the student names from the file LineUp.txt.The program should read names from the file until there is no more data to read.
 
 
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+	string student,
+		firstName,
+		lastName;
+
+	int num_students;
+
+
+
+		firstName = lastName = student;
+	
+			if (student < firstName)
+				firstName = student;
+
+			if (student > lastName)
+				lastName = student;
+
+
+
+	cout << "The first student in line is:" << firstName << endl;
+
+	cout << "The last student in line is:" << lastName << endl;
+
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
