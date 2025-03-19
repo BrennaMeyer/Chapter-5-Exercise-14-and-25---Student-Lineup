@@ -24,16 +24,36 @@ int main()
 
 	int num_students;
 
+	cout << "Enter the number of students: ";
 
+	while (!(cin >> num_students) || (num_students < 1 || num_students>25))
+	{
+		cout << "Enter a number between 1 and 25:";
+		cin.get();
+	}
+
+	cout << "Enter the first students name:";
+	cin >> student;
 
 		firstName = lastName = student;
-	
-			if (student < firstName)
-				firstName = student;
+		
+		if (student < firstName)
+			firstName = student;
 
-			if (student > lastName)
-				lastName = student;
+		if (student > lastName)
+			lastName = student;
 
+			for (int i = 1 ; 1 < num_students; i++)
+			{
+				cout << "Enter the name of student No." << (i + 1) << ":";
+				cin >> student;
+
+				if (student < firstName)
+					firstName = student;
+
+				if (student > lastName)
+					lastName = student;
+			}
 
 
 	cout << "The first student in line is:" << firstName << endl;
