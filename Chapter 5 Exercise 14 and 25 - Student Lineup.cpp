@@ -27,6 +27,7 @@ int main()
 	int num_students;
 
 	inputFile.open("LineUp.txt");
+
 	if (inputFile)
 	{
 		inputFile >> student;
