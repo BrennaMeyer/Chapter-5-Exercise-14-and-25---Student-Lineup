@@ -33,6 +33,7 @@ int main()
 		inputFile >> student;
 
 		firstName = lastName = student;
+
 		while (inputFile >> student)
 		{
 
