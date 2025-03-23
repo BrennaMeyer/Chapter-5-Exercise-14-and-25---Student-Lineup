@@ -26,6 +26,7 @@ int main()
 
 	cout << "Enter the number of students: ";
 
+	//Error if number is less than 0 but greater than 25
 	while (!(cin >> num_students) || (num_students < 1 || num_students>25))
 	{
 		cout << "Enter a number between 1 and 25:";
@@ -38,10 +39,15 @@ int main()
 		firstName = lastName = student;
 		
 		if (student < firstName)
+		{
 			firstName = student;
+		}
 
 		if (student > lastName)
+		{
 			lastName = student;
+		}
+	
 
 			for (int i = 1 ; 1 < num_students; i++)
 			{
