@@ -33,10 +33,11 @@ int main()
 		cin.get();
 	}
 
+	//The first student 
 	cout << "Enter the first students name:";
 	cin >> student;
 
-		firstName = lastName = student;
+	firstName = lastName = student;
 		
 		if (student < firstName)
 		{
@@ -45,10 +46,10 @@ int main()
 
 		if (student > lastName)
 		{
-			lastName = student;
+		lastName = student;
 		}
 	
-
+		// Number With Student Names 
 			for (int i = 1 ; 1 < num_students; i++)
 			{
 				cout << "Enter the name of student No." << (i + 1) << ":";
@@ -61,7 +62,7 @@ int main()
 					lastName = student;
 			}
 
-
+			//First and last students 
 	cout << "The first student in line is:" << firstName << endl;
 
 	cout << "The last student in line is:" << lastName << endl;
