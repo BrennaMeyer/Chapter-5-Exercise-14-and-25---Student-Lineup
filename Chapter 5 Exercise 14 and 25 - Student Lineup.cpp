@@ -58,7 +58,7 @@ int main()
 		}
 
 		// Number With Student Names 
-			for (int i = 1 ; 1 < num_students; i++)
+		for (int i = 1; 1 < num_students; i++)
 			{
 				cout << "Enter the name of student No." << (i + 1) << ":";
 			cin >> student;
