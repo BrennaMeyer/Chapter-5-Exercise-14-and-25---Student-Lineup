@@ -15,6 +15,7 @@
 #include <string>
 using namespace std;
 
+
 int main()
 {
 
@@ -25,7 +26,7 @@ int main()
 	int num_students;
 
 	cout << "Enter the number of students: ";
-
+	
 	//Error if number is less than 0 but greater than 25
 	while (!(cin >> num_students) || (num_students < 1 || num_students>25))
 	{
