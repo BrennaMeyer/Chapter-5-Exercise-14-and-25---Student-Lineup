@@ -27,7 +27,7 @@ int main()
 	int num_students;
 
 	inputFile.open("LineUp.txt");
-
+	// Input file
 	if (inputFile)
 	{
 		inputFile >> student;
@@ -46,11 +46,13 @@ int main()
 		 }
 		inputFile.close();
 	}
+
+	//Error to file 
 	else
 	{
 		cout << "Error opening file." << endl;
 	}
-
+	// Line order
 	cout << "The first student in line is:" << firstName << endl;
 
 	cout << "The last student in line is:" << lastName << endl;
